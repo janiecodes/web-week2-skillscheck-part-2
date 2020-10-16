@@ -10,6 +10,12 @@
 //addMoreDucks should return the array.
 
 //Code here
+function addMoreDucks(arr){
+    if(arr.length > 4){
+        arr[2] = '42 ducks'
+    }
+    return arr
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -19,7 +25,11 @@
 //the 3rd element of the array. cutItOut should return the array.
 
 //Code here
-
+function cutItOut(arr){
+    if(arr.length > 4){
+        arr.splice(2,1)
+    }
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -28,4 +38,6 @@
 //changeName should return the array.
 
 //Code here
-
+function changeName(arr){
+    arr.filter()
+}
