@@ -27,7 +27,7 @@ var book2 = {
 // variable named book1CheckOut.
 
 // CODE HERE
-
+const book1CheckOut = 
 
 // What is the context of running book1.checkOut()?
 // var q1Context = "explicit"
