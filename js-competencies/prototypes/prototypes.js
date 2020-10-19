@@ -24,4 +24,17 @@ function Person(name, age) {
 }
 
 //Code here
+Person.prototype.drinkCoffee = function(){
+  this.energy += 10;
+  this.linesOfCode += 50;
+  this.qualityOfCode -= 1;
+  return Person
+}
 
+Person.prototype.readDocumentation = function(){
+  this.energy -= 20;
+  this.linesOfCode -= 30;
+  this.qualityOfCode += 3;
+  return Person
+
+}

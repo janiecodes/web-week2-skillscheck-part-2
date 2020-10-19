@@ -29,6 +29,7 @@ function cutItOut(arr){
     if(arr.length > 4){
         arr.splice(2,1)
     }
+    return arr
 }
 
 //////////////////PROBLEM 3////////////////////
@@ -38,6 +39,24 @@ function cutItOut(arr){
 //changeName should return the array.
 
 //Code here
+// function changeName(arr){
+//     arr.filter(function(element){
+//          element === "Tolkien"
+//     })
+//     return arr
+// }
+
+//a.forEach(function(item, i) { if (item == 3452) a[i] 
+//= 1010; });
+
+//const changeName = a.forEach(function(element, i) { if (element === "Tolkn") a[i] = "Tolkien"})
+
 function changeName(arr){
-    arr.filter()
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] = "Tolkn"){
+         arr[i] = "Tolkien"
+        }
+    }
+    return arr
+
 }

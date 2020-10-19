@@ -27,8 +27,9 @@ var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
 //Code here
 function sunrise(){
-    [...sunriseColors]
+    newArr = [...sunriseColors]
 }
+
 
 
 

@@ -102,7 +102,7 @@ var descent = {
 };
 
 // CODE HERE
-const almostThere = descent.remainingElevation.bind(descent)
+const almostThere = descent.remainingElevation.bind()
 //const almostThere = descent.remainingElevation
 
 // Now, invoke almostThere and save the result to
