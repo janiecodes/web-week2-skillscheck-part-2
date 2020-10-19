@@ -28,6 +28,8 @@ var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 //Code here
 function sunrise(){
     newArr = [...sunriseColors]
+    newArr[0] = "green"
+    return newArr
 }
 
 
