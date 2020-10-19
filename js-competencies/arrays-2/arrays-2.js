@@ -52,11 +52,12 @@ function cutItOut(arr){
 //const changeName = a.forEach(function(element, i) { if (element === "Tolkn") a[i] = "Tolkien"})
 
 function changeName(arr){
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] = "Tolkn"){
-         arr[i] = "Tolkien"
-        }
+for(let i = 0; i < arr.length; i++){
+    if(arr.i = "Tolkn"){
+     arr.splice(1, 1, "Tolkien")
     }
-    return arr
-
+    
 }
+    return arr
+}
+

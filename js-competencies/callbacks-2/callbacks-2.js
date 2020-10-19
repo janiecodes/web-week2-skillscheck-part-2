@@ -10,7 +10,7 @@
 //should return the SECOND callback param invoked.
 
   //Code here
-
+function invokesCallbacks(number)
 
 //////////////////PROBLEM 2////////////////////
 
@@ -22,10 +22,9 @@
 
   var greeting;
 
-  function timedGreeting(callback){
-
-    //Code here
-
-    
+  function timedGreeting(){
+    setTimeout(function(callback){
+      greeting = timeGreeting(callback)
+    }, 1)  
   }
 
