@@ -10,8 +10,16 @@
 //use the built-in array method .map
   
   //Code here
-
-
+// function dragonMapper(array){
+//   array.map(element => `${element}...here be dragons`)
+//   return array
+// }
+const dragonMapper = arr => {
+  let newArr = arr.map(function(e) {
+    return e + '...here be dragons';
+  })
+  return newArr
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -21,8 +29,10 @@
 //does NOT have the key favoriteCookie.
 //cookieLoversOnly should return the filtered array.
   
-  //Code here
-
+//Code here
+function cookieLoversOnly(arr){
+  return arr.filter(e => e.favoriteCookie)
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,8 +45,10 @@
 //Hint: there is an array method for this.
 
 
-  //Code here
-
+//Code here
+function changeValue(arr, callback){
+ arr.forEach(callback)
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -47,7 +59,19 @@
 //of multiplying all the elements together)
 //Return the product.
   
-  //Code here
+//Code here
+// const findProduct = arr.reduce(function(acc, curr) {
+//     return acc * curr
+//    }, 0) 
+
+function findProduct(arr){
+  arr.reduce(function(accumulator, element) {
+    return accumulator *= element
+  })
+}
+
+
+
 
 
 //////////////////PROBLEM 5////////////////////

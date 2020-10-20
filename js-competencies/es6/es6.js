@@ -13,7 +13,7 @@ function addDucks(arr, ind) {
   //WRITE YOUR FOR-LOOP HERE
   //For your iterator, declare it with the let keyword, and name it "i"
   for(let i = 0; i < arr.length; i++){
-    arr[i] + "Duck"
+    arr[i] += 'Duck'
   }
 
   //DO NOT TOUCH THIS
@@ -84,7 +84,7 @@ var obj = { a: "a", b: "b", c: "c" }
 //string without spaces.
 
 //Code here
-let cleanUp = () => string.trim()
+let cleanUp = (string) => string.replace(/\s+/g, '')
 
 //////////////////PROBLEM 7////////////////////
 //Finish the function below. Assume that the
@@ -108,7 +108,6 @@ function whatOcean(obj) {
 //plus the last element of the rest parameter, like so:
 //"spaghetti & liver with onions"
 
-function leftovers(string, rest){
-  return "string" 
-  & [rest.length-1]
+function leftovers(string, ...rest){
+  return string + ' & ' + rest[rest.length-1]
 }
