@@ -10,7 +10,13 @@
 //should return the SECOND callback param invoked.
 
   //Code here
-function invokesCallbacks(number)
+function invokesCallbacks(number, callback, callback2){
+  if(number > 10){
+    return callback
+  }else{
+    return callback2
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -20,11 +26,11 @@ function invokesCallbacks(number)
 //of invoking the callback parameter 
 //to the variable greeting, after 1 second.
 
-  var greeting;
+  var greeting = timedGreeting(callback);
 
   function timedGreeting(){
     setTimeout(function(callback){
-      greeting = timeGreeting(callback)
+      greeting = timedGreeting(callback)
     }, 1)  
   }
 

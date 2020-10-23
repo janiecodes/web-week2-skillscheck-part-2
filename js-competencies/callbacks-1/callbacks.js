@@ -5,10 +5,9 @@
 //Return the array converted into a string using the toString method.
 
 //Code here
-function stringItOut(array){
-
-}
-
+// function stringItOut(array){
+//   array.every().sort()[or .sort((a,b) => b - a][.reverse()].toString()
+// }
 //////////////////PROBLEM 2////////////////////
 
 // Given the functions below: invoke the function math passing in complex, 2, and 3 as parameters. 
