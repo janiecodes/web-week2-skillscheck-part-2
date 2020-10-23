@@ -60,18 +60,9 @@ function changeValue(arr, callback){
 //Return the product.
   
 //Code here
-// const findProduct = arr.reduce(function(acc, curr) {
-//     return acc * curr
-//    }, 0) 
 
 function findProduct(arr){
-  arr.reduce(function(accumulator, element) {
-    return accumulator *= element
-  })
-}
-
-
-
+  return arr.reduce((acc, curr) => acc * curr)}
 
 
 //////////////////PROBLEM 5////////////////////
@@ -89,8 +80,9 @@ function findProduct(arr){
 // cipherize will return: "d"
 
   //Code here
-
-
+function cipherize(array, string){
+  return string.charAt(array.indexOf(string))
+}
 
 //////////////////PROBLEM 6////////////////////
 
@@ -100,3 +92,6 @@ function findProduct(arr){
 //apart, reversing it, and putting it back together again.
 
   //Code here
+function reverseMe(string){
+  return string.split("").reverse().join("")
+}
