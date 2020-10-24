@@ -35,8 +35,8 @@ var person = {
 }
 
 //CODE HERE
-person.moveCities = {
-  function(city){
+var person = {
+  moveCities: function(city){
     person.city = city
   }
 }
@@ -71,7 +71,12 @@ var sampleOutput = [
 ]
 
 //CODE HERE
-
+function keyAccessor(array, object){
+  let newArr = []
+  for(let i = 0; i < array.length; i++){
+    newArr.push(object.array[i])
+  }
+}
 
 
 ///////////////////Problem 4///////////////////
@@ -82,7 +87,13 @@ var sampleOutput = [
 //getVals should return the new array.
 
 //CODE HERE
-
+function getVals(object){
+  let newArr = []
+  for(const prop in object){
+    newArr.push(obj[prop])
+  }
+  return newArr
+}
 
 ///////////////////Problem 5///////////////////
 
@@ -97,3 +108,4 @@ var doors = {
 }
 
 //Code here
+let doorKeys = (Object.keys(doors))
