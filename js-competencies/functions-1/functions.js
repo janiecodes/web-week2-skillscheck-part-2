@@ -33,9 +33,9 @@ function hey(name){
 //the string "Hi " plus the name.
 
 //Code here
-// hi(name){
-//   return `Hi ${name}`
-// }
+const hi = function(name) {
+  return `Hi ${name}`
+}
 
 ///////////////////Problem 3//////////////////
 //Create a function called hello, using an arrow
@@ -43,7 +43,7 @@ function hey(name){
 //the string "Hello " plus the name.
 
 //Code here
-//hello (name => `Hello + ${name}`
+hello = name => `Hello ${name}`
 
 ///////////////////Problem 4//////////////////
 //Create a function named fun, which takes in
@@ -84,6 +84,13 @@ function climb() {
   console.log('function climb\'s local arguments var - ', arguments)
 
   //CODE HERE - DO NOT TOUCH THE CODE ABOVE!
+  if(typeOf(string) === arguments[0] && arguments[1] === falsy){
+    return "On belay?"
+  }else if(typeOf(string) === arguments[0] && arguments[1] === true){
+    return "Climbing!"
+  }else{
+    return "Let's set up the belay rope before we climb."
+  }
 
 }
 
