@@ -5,6 +5,10 @@
 //Return the array converted into a string using the toString method.
 
 //Code here
+function stringItOut(array){
+  array.every().sort().reverse().toString()
+}
+
 // function stringItOut(array){
 //   array.every().sort()[or .sort((a,b) => b - a][.reverse()].toString()
 // }
