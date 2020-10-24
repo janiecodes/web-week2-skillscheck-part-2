@@ -10,6 +10,13 @@
 //but a function expression saved to the variable key.
 
 //Code here
+function keyword(){
+  let key = function(){
+    return "word"
+  }
+  return key
+}
+
 
 
 ///////////////////Problem 2//////////////////
@@ -126,13 +133,26 @@ var answer5 = ["funcA"]
 
 //Code here
 function janus(boolean){
-  if(boolean = true){
-    function right(string){
-      return "Looking forwards"
-    }
+  function left(){
+    return "Looking backwards"
+  }
+
+  function right(){
+    return "Looking forwards"
+  }
+
+  if(boolean === true){
+    return right()
   }else{
-    function left(string){
-      return "Looking backwards"
-    }
+    return left()
   }
 }
+
+
+  // if(boolean === true){
+  //     return function right()
+
+  // }else{
+  //   return function left(){
+  //   }
+  // }
