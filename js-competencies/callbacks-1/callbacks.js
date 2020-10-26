@@ -6,7 +6,7 @@
 
 //Code here
 function stringItOut(array){
-  array.every().sort().reverse().toString()
+ return array.sort(function(a, b) {return b.length - a.length}).reverse().toString()
 }
 
 // function stringItOut(array){
