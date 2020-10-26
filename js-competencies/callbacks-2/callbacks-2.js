@@ -12,9 +12,9 @@
   //Code here
 function invokesCallbacks(number, callback, callback2){
   if(number > 10){
-    return callback
+    return callback()
   }else{
-    return callback2
+    return callback2()
   }
 }
 
@@ -26,11 +26,13 @@ function invokesCallbacks(number, callback, callback2){
 //of invoking the callback parameter 
 //to the variable greeting, after 1 second.
 
-  var greeting = timedGreeting(callback);
+var greeting;
 
-  function timedGreeting(){
-    setTimeout(function(callback){
-      greeting = timedGreeting(callback)
-    }, 1)  
-  }
+  function timedGreeting(callback){
+
+
+    setTimeout(() => {
+      greeting = callback()
+    }, 1000
+  )}
 

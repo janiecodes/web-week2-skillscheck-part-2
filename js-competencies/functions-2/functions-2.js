@@ -5,13 +5,13 @@
 //save a function expression to a variable
 //called key. That function expression should
 //return the string "word". Then, return key.
-
+ß
 //NOTE: key should not be an arrow function,
 //but a function expression saved to the variable key.
 
 //Code here
-let keyword = function(){
-  let key = function(){
+function keyword(){
+  var key = function(){
     return "word"
   }
   return key
@@ -33,7 +33,7 @@ argsVsParams(2, 3, num)
 // var z = "argument"
 // var z = "function"
 // var z = "parameter"
-var z = "variable"
+ var z = "variable"
 
 //What is a?
 // var a = "argument"
