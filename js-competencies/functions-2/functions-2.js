@@ -11,12 +11,11 @@
 
 //Code here
 function keyword(){
-  let key = function(){
+  const key = function(){
     return "word"
   }
-  return key
+  return key()
 }
-
 
 
 ///////////////////Problem 2//////////////////

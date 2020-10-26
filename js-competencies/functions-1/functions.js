@@ -84,13 +84,15 @@ function climb() {
   console.log('function climb\'s local arguments var - ', arguments)
 
   //CODE HERE - DO NOT TOUCH THE CODE ABOVE!
-  if(typeOf(string) === arguments[0] && arguments[1] === falsy){
-    return "On belay?"
-  }else if(typeOf(string) === arguments[0] && arguments[1] === true){
-    return "Climbing!"
-  }else{
-    return "Let's set up the belay rope before we climb."
+  if(arguments[0]){
+    if(arguments[1]==false || (typeof(arguments[1]) != typeof(true))){
+      return "On belay?";
+    } else { 
+      return "Climbing!";
+    }
+  } else {
+    return "Let's set up the belay rope before we climb.";
   }
-
 }
+
 
