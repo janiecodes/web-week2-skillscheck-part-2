@@ -71,13 +71,9 @@ var sampleOutput = [
 ]
 
 //CODE HERE
-function keyAccessor(array, object){
-  let newArr = []
-  for(let i = 0; i < array.length; i++){
-      newArr.push(object)
-    }
-  return newArr
-  }
+function keyAccessor(array, object) {
+  return array.map(index => object[index]);
+}
 
 // newArr.push(array.map(object.array[i]))
 // return newArr
