@@ -74,10 +74,20 @@ var sampleOutput = [
 function keyAccessor(array, object){
   let newArr = []
   for(let i = 0; i < array.length; i++){
-    newArr.push(object.array[i])
+      newArr.push(object)
+    }
+  return newArr
   }
-}
 
+// newArr.push(array.map(object.array[i]))
+// return newArr
+
+//let newArr = array.filter((object) => object.array[i] === array[i])
+//object.array[i]
+
+//newArr.push(array[i].object)
+//let newArr = array.map(array[i]) => newArr.push(object[array][i])
+//let newArr = array.filter((object) => object.array[i] === array[i])
 
 ///////////////////Problem 4///////////////////
 
@@ -90,7 +100,7 @@ function keyAccessor(array, object){
 function getVals(object){
   let newArr = []
   for(const prop in object){
-    newArr.push(obj[prop])
+    newArr.push(object[prop])
   }
   return newArr
 }
