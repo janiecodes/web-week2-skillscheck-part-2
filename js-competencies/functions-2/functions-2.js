@@ -5,7 +5,6 @@
 //save a function expression to a variable
 //called key. That function expression should
 //return the string "word". Then, return key.
-ß
 //NOTE: key should not be an arrow function,
 //but a function expression saved to the variable key.
 
@@ -38,7 +37,7 @@ argsVsParams(2, 3, num)
 //What is a?
 // var a = "argument"
 // var a = "function"
-var a = "parameter"
+ var a = "parameter"
 // var a = "variable"
 
 //What is c?
@@ -79,7 +78,7 @@ function loopDeLoop(array){
 
 //What will be returned from loopDeLoop([1, 2, 3, 4])?
 // var answer1 = "Leaving early...at index 4"
- var answer1 = "Finished the loop."
+var answer1 = "Finished the loop."
 // var answer1 = "Will I ever get used?"
 
 //What will be returned from loopDeLoop([1, "X", 3, 4])?
